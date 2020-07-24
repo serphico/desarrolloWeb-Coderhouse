@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Taller de Noel</title>
+</head>
+<body>
+     <header>
+          <img src="img/logo.png" alt="Logo del Taller de Noel">
+          <nav>
+               <ul>
+                   <a href="index.html">
+                        <li>INICIO</li>
+                   </a>
+                   <a href="sobreMi.html">
+                        <li>SOBRE MI</li>
+                   </a>
+                   <a href="pedidos.html">
+                        <li>PEDIDOS</li>
+                   </a>
+                   <a href="cursos.html">
+                        <li>CURSOS</li>
+                   </a>
+                   <a href="contacto.html">
+                        <li>CONTACTO</li>
+                   </a>
+               </ul>
+          </nav>
+
+          <div  class="contenedorRedesHeader">
+               <h3>SEGUIME EN</h3>
+               <img src="img/redes/facebook.png" alt="logo facebook">
+               <img src="img/redes/instagram.png" alt="logo instagram">
+               <img src="img/redes/youtube.png" alt="logo youtube">
+          </div>
+     </header>
+
+     <article>
+          <h2>CONSULTAS</h2>
+          <form action="" method="POST">
+               <div>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" required>
+               </div><br>
+               <div>
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" id="apellido" required>
+               </div><br>
+               <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+               </div><br>
+               <div>
+                    <select name="nacionalidad" id="nacionalidad" required>
+                         <option value="0">¿Donde vivis?</option>
+                         <option value="1">Argentina</option>
+                         <option value="2">Continante Americano (fuera de Argentina).</option>
+                         <option value="3">Continente Europeo</option>
+                    </select>
+               </div><br>
+               <div>
+                    <label for="newletter">¿Desea recibir Newletter con descuentos y promociones?</label>
+                    <input type="checkbox" name="newletter" id="newletter" required>
+               </div><br>
+               <div>
+                    <textarea name="consulta" id="" cols="30" rows="10" placeholder="Escriba su consulta." required></textarea>
+               </div><br>
+
+               <input type="submit" value="Envia">
+               <input type="reset" value="Restablecer">
+
+          </form>
+     </article>
+</body>
+</html>
