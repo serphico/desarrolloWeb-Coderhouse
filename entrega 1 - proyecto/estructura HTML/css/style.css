@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+
+
+/*******************************************
+* RESETs:
+*******************************************/
+*{
+     padding: 0;
+     margin: 0;
+}
+
+body,html{
+     font-family: 'Montserrat', sans-serif;
+     height: 100%;
+}
+
+/*******************************************
+* FIN DEL RESET:
+*******************************************/
+
+
+/*******************************************
+* COMIENZA ESTILOS DEL HEADER COMPRENDE:
+* -Marca  
+* -Menu
+* -Redes
+*******************************************/
+header{
+     background-color: #d3d3d3;
+     display: flex;
+     flex-wrap: wrap;
+     padding: 0;
+     margin: 0 auto;
+}
+.logo{
+     width: 15%;
+     display: inline-flex;
+}
+
+.menu{
+     display: inline-flex;
+     width: 70%;
+     align-items: center;
+}
+
+.menu ul{
+     width: 100%;
+     text-align: center;
+}
+
+.menu ul a{
+     text-decoration: none;
+     cursor: pointer;
+     padding: 0% 1% 0% 1%;
+     list-style: none;
+     color: black;
+     font-size: 1.2rem;
+}
+
+.menu ul a:hover{
+     color: red;
+     font-size: 1.2rem;
+     font-weight: 700;
+     text-decoration: underline;
+     text-align: center;
+}
+
+.menu ul a li{
+     display: inline;
+
+}
+
+
+.contenedorRedesHeader{
+     display: inline-flex;
+     align-items: center;
+     width: 10%;
+}
+
+.contenedorRedesHeader h3{
+     display: block;
+}
+
+
+.contenedorRedesHeader img{
+     display: inline;
+     width: 30%;
+}
+
+/*******************************************
+* FIN ESTILOS DE HEADER
+*******************************************/
+
+/*******************************************
+* COMIENZA ESTILOS DEL INDEX.
+*******************************************/
+
+.fondoSection{
+     background-image: url('../img/index/fondo.png');
+     background-repeat: no-repeat;
+     width: 100%;
+     height: 23rem;
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+}
+
+.fondoSection h1{
+     font-family: 'Yeseva One', cursive;
+     font-size: 3rem;
+     width: 30%;
+     margin-left: auto;
+     order: 2;
+     color: orangered;
+}
+
+.contenedorDestacado{
+     width: 100%;
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: center;
+     padding: 2% 0% 2% 0%;
+}
+
+.contenedorDestacado h2{
+     width: 100%;
+     text-align: center;
+     font-size: 2rem;
+     font-family: 'Yeseva One', cursive;
+     color: orangered;
+}
+
+.contenedorImgDestacado{
+     text-align: center;
+     padding: 1% 0.5% 0% 0.5%;
+     padding-bottom: 5%;
+}
+
+.contenedorImgDestacado img{
+     width: 50%;
+     border-radius: 50%;
+}
+
+.contenedorImgDestacado p{
+     font-weight: 700;
+     font-size: 1.5rem;
+     color: orangered;
+}
+
+
+/*******************************************
+* FIN ESTILOS DEL INDEX.
+*******************************************/
+
+
+
+
+/*******************************************
+* COMIENZA ESTILOS DEL PEDIDOS:
+*******************************************/
+
+.contenedorPedidos h2{
+     width: 100%;
+     text-align: center;
+     font-size: 2rem;
+     font-family: 'Yeseva One', cursive;
+     color: orangered;
+}
+/*******************************************
+* FIN ESTILOS DEL PEDIDOS.
+*******************************************/
+
+
+/*******************************************
+* COMIENZA ESTILOS DEL CONTACTO:
+*******************************************/
+
+.contenedorFormulario h2{
+     width: 100%;
+     text-align: center;
+     font-size: 2rem;
+     font-family: 'Yeseva One', cursive;
+     color: orangered;
+}
+/*******************************************
+* FIN ESTILOS DEL CONTACTO.
+*******************************************/
+
+
+
+/*******************************************
+* COMIENZA ESTILOS DEL FOOTER COMPRENDE:
+* -Direccion y datos de la empresa   
+* -Copyright
+* -Redes
+*******************************************/
+
+footer{
+     background-color: #d3d3d3;
+     display: flex;
+     flex-wrap: wrap;
+     padding: 1%;
+     margin: 0 auto;
+     width: 100%;
+     position: fixed;
+     bottom: 0;
+     left: 0;
+     vertical-align: bottom;
+}
+
+address{
+     display: inline-flex;
+     width: 15%;
+     align-items: center;
+}
+
+.copyRight{
+     display: inline-flex;
+     width: 66%;
+     align-items: flex-end;
+}
+
+.copyRight small{
+     width: 100%;
+     text-align: center;
+}
+
+.contenedorRedesFooter{
+     display: inline-flex;
+     align-items: center;
+     width: 10%;
+}
+
+.redes{
+     display: block;
+}
+
+.contenedorRedesFooter h3{
+     display: block;
+}
+
+
+.contenedorRedesFooter img{
+     display: inline;
+     width: 30%;
+}
+
+
+/*******************************************
+* FIN ESTILOS DE FOOTER
+*******************************************/
