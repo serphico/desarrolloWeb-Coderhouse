@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Taller de Noel</title>
+     <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+     <header>
+          <img class="logo" src="img/logo.png" alt="Logo del Taller de Noel">
+          <nav class="menu">
+               <ul>
+                   <a href="index.html">
+                        <li>INICIO</li>
+                   </a>
+                   <a href="sobreMi.html">
+                        <li>SOBRE MI</li>
+                   </a>
+                   <a href="pedidos.html">
+                        <li>PEDIDOS</li>
+                   </a>
+                   <a href="patrones.html">
+                    <li>PATRONES</li>
+                   </a>
+                   <a href="contacto.html">
+                        <li>CONTACTO</li>
+                   </a>
+               </ul>
+          </nav>
+
+          <div  class="contenedorRedesHeader">
+               <div class="redes">
+                    <h3>SEGUIME EN</h3>
+                    <img src="img/redes/facebook.png" alt="logo facebook">
+                    <img src="img/redes/instagram.png" alt="logo instagram">
+                    <img src="img/redes/youtube.png" alt="logo youtube"> 
+               </div>
+          </div>
+     </header>
+
+     <article class="contenedorFormulario">
+          <h2>CONTACTO</h2>
+          <form action="" method="POST">
+               <div>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" required>
+               </div>
+               <div>
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" id="apellido" required>
+               </div>
+               <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+               </div>
+               <div>
+                    <select name="nacionalidad" id="nacionalidad" required>
+                         <option value="0">¿Donde vivis?</option>
+                         <option value="Argentina">Argentina</option>
+                         <option value="America">Continante Americano (fuera de Argentina).</option>
+                         <option value="Europa">Continente Europeo</option>
+                    </select>
+               </div>
+               <div>
+                    <span>¿Desea recibir Newletter con descuentos y promociones?</span>
+                    <input type="checkbox" name="newletter" id="newletter" required>
+               </div>
+               <div>
+                    <textarea name="consulta" id="" cols="30" rows="10" placeholder="Escriba su consulta." required></textarea>
+               </div>
+
+               <div class="botonForm">
+                    <input type="submit" value="Envia">
+                    <input type="reset" value="Restablecer">
+               </div>
+
+
+          </form>
+     </article>
+
+     <footer>
+          <address>
+               Taller de Noel <br>
+               Av. siempre vivas 742 <br>
+               Corrientes - Argentina.
+          </address>
+
+          <div class="copyRight">
+               <small >Taller de Noel - Copy right 1988 -2020</small>
+          </div>
+
+          <div class="contenedorRedesFooter">
+               <div class="redes">
+                    <h3>SEGUIME EN</h3>
+                    <img src="img/redes/facebook.png" alt="logo facebook">
+                    <img src="img/redes/instagram.png" alt="logo instagram">
+                    <img src="img/redes/youtube.png" alt="logo youtube">
+               </div>
+          </div>
+     </footer>
+</body>
+</html>
