@@ -326,6 +326,7 @@ header{
 
 .contenedorPrecios div h4{
      background-color: orangered;
+     color: white;
      align-self: stretch;
      text-align: center;
      padding: 1%;
@@ -335,7 +336,7 @@ header{
      font-size: 0.75rem;
      font-weight: 700;
      padding: 2% 0% 2% 5%;
-     margin-top: 5%;
+     margin-top: 3%;
      text-align: center;
 }
 
