@@ -8,10 +8,11 @@
      <link rel="stylesheet" href="css/bootstrap-grid.css">
      <link rel="stylesheet" href="css/bootstrap.css">
      <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body class="container-fluid">
      <header class="row justify-content-center">
-          <img class="logo col-lg-3 col-xs-12" src="img/logo.png" alt="Logo del Taller de Noel">
+          <img class="logo col-lg-3" src="img/logo.png" alt="Logo del Taller de Noel">
           <nav class="menu col-lg-6 align-self-center">
                <ul>
                    <a href="index.html">
@@ -43,32 +44,45 @@
 
      </header>
 
-          <article class="row fondoSection">
-               <h1 class="col-md-4">
-                    Lorem ipsum dolor sit amet, consectetur
-               </h1>
-          </article>
-
-          <article class="row justify-content-md-center contenedorDestacado">
-               <h2 class="col-md-12">DESTACADOS</h2>
-
-               <div class="col-md-3 contenedorImgDestacado">
-                    <img src="./img/index/destacados/destacado1.png" alt="destacado1">
-                    <p>nombre destacado1</p>
+     <article class="contenedorFormulario">
+          <h2>CONTACTO</h2>
+          <form action="" method="POST">
+               <div>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" required>
+               </div>
+               <div>
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" id="apellido" required>
+               </div>
+               <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+               </div>
+               <div>
+                    <select name="nacionalidad" id="nacionalidad" required>
+                         <option value="0">¿Donde vivis?</option>
+                         <option value="Argentina">Argentina</option>
+                         <option value="America">Continante Americano (fuera de Argentina).</option>
+                         <option value="Europa">Continente Europeo</option>
+                    </select>
+               </div>
+               <div>
+                    <span>¿Desea recibir Newletter con descuentos y promociones?</span>
+                    <input type="checkbox" name="newletter" id="newletter" required>
+               </div>
+               <div>
+                    <textarea name="consulta" id="" cols="30" rows="10" placeholder="Escriba su consulta." required></textarea>
                </div>
 
-               <div class="col-md-3 contenedorImgDestacado">
-                    <img src="./img/index/destacados/destacado2.png" alt="destacado2">
-                    <p>nombre destacado2</p>
+               <div class="botonForm">
+                    <input type="submit" value="Envia">
+                    <input type="reset" value="Restablecer">
                </div>
 
-               <div class="col-md-3 contenedorImgDestacado">
-                    <img src="./img/index/destacados/destacado3.png" alt="destacado3">
-                    <p>nombre destacado3</p>
-               </div>
-          </article>
 
-
+          </form>
+     </article>
 
      <footer class="row justify-content-center">
           <address class="col-md-2 offset-md-1">
