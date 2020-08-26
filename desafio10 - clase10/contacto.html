@@ -12,38 +12,43 @@
 </head>
 <body class="container-fluid">
      <header class="row justify-content-center">
-          <img class="logo col-lg-3" src="img/logo.png" alt="Logo del Taller de Noel">
-          <nav class="menu col-lg-6 align-self-center">
-               <ul>
-                   <a href="index.html">
-                        <li>INICIO</li>
-                   </a>
-                   <a href="sobreMi.html">
-                        <li>SOBRE MI</li>
-                   </a>
-                   <a href="pedidos.html">
-                        <li>PEDIDOS</li>
-                   </a>
-                   <a href="patrones.html">
-                    <li>PATRONES</li>
-                   </a>
-                   <a href="contacto.html">
-                        <li>CONTACTO</li>
-                   </a>
-               </ul>
-          </nav>
 
-          <div  class="contenedorRedesHeader col-lg-3 align-self-center">
-               <div class="redes">
-                    <h3>SEGUIME EN</h3>
-                    <img class="img-fluid" src="img/redes/facebook.png" alt="logo facebook">
-                    <img class="img-fluid" src="img/redes/instagram.png" alt="logo instagram">
-                    <img class="img-fluid" src="img/redes/youtube.png" alt="logo youtube"> 
+          <nav class="navbar navbar-expand-lg navbar-light">
+               <a class="navbar-brand" href="#"><img class="logo img-fluid" src="img/logo.png" alt="Logo del Taller de Noel"></a>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="menu collapse navbar-collapse" id="navbarText">
+                 <ul class="navbar-nav mr-auto">
+                   <li class="nav-item active">
+                     <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link" href="#">Sobre mi</a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link" href="#">Pedidos</a>
+                   </li>
+                   <li class="nav-item">
+                    <a class="nav-link" href="#">Patrones</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contacto</a>
+                  </li>
+                 </ul>
+                 <div  class="navbar-text contenedorRedesHeader col-lg-3 align-self-center">
+                    <div class="redes">
+                         <h3>SEGUIME EN</h3>
+                         <img class="img-fluid" src="img/redes/facebook.png" alt="logo facebook">
+                         <img class="img-fluid" src="img/redes/instagram.png" alt="logo instagram">
+                         <img class="img-fluid" src="img/redes/youtube.png" alt="logo youtube"> 
+                    </div>
                </div>
-          </div>
+
+               </div>
+             </nav>
 
      </header>
-
      <article class="contenedorFormulario">
           <h2>CONTACTO</h2>
           <form action="" method="POST">
