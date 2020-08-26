@@ -14,6 +14,10 @@ header{
     background-color: #d3d3d3;
 }
 
+.logo{
+    width: 50%;
+}
+
 .menu ul li a{
     text-decoration: none;
     cursor: pointer;
@@ -564,6 +568,9 @@ footer{
 
 
 @media (max-width: 580px){
+    .logo{
+        width: 100%;
+    }
 
     .menu ul li a{
         text-align: center;
@@ -597,9 +604,21 @@ footer{
 }
 
 .fondoSection h1{
-    top:5%;
-    color:white;
+    font-family: 'Yeseva One', cursive;
+    font-size: 3rem;
+    color: transparent;
+    transform: translateY(10rem);
+    animation:forwards;
+    animation-name: entraTexto;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
 }
+
+
+@keyframes entraTexto {
+    0% {transform: translateY(-15rem);}
+    100% {transform: translateY(10rem); color:white;}
+  }
 
 
 
@@ -607,6 +626,38 @@ footer{
 
 /*******************************************
 * FIN ESTILOS DEL INDEX.
+*******************************************/
+
+/*******************************************
+* COMIENZA ESTILOS DEL FOOTER:
+*******************************************/
+
+footer{
+    text-align: center;
+    
+}
+
+footer address{
+    font-size: 2rem;
+}
+
+.contenedorRedesFooter img{
+    display: block;
+    margin: auto;
+    width: 20%;
+    cursor: pointer;
+    padding-bottom: 2%;
+}
+
+.copyRight{
+    text-align: center;
+    font-size: 1.5rem;
+    font-style: italic;
+    margin: 1% 0% 8% 0%;
+}
+
+/*******************************************
+* FIN ESTILOS DE FOOTER
 *******************************************/
 
 }
