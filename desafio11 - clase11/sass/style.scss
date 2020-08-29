@@ -4,10 +4,15 @@
 
 //Colores
 $colorRojo:firebrick;
+$colorNaranja:orange;
 $colorGris:#d3d3d3;
+$colorBlancoHumo:whitesmoke;
+$colorBlanco:white;
+$colorNegro:black;
 
 //Tipografia
 $Montserrat:'Montserrat', sans-serif;
+
 
 html{
     font-family: $Montserrat;
@@ -36,7 +41,7 @@ header{
                     cursor: pointer;
                     padding: 0% 1% 0% 1%;
                     list-style: none;
-                    color: black;
+                    color: $colorNegro;
                     font-size: 1.6rem;
                 }
                 a:hover{
@@ -150,30 +155,30 @@ header{
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    background-color: firebrick;
+    background-color: $colorRojo;
     border-radius: 1rem;
+
+    img{
+        width: 50%;
+    }
+
+    div{
+        width: 50%;
+        padding: 5%;
+    }
+
+    h2{
+        color: $colorBlanco;
+        text-align: center;
+        font-weight: 900;
+    }
+
+    p{
+        color: $colorBlanco;
+        text-align: justify;
+    }
 }
 
-.contenedorSobreMi img{
-    width: 50%;
-}
-
-.contenedorSobreMi div{
-    width: 50%;
-    padding: 5%;
-}
-
-.contenedorSobreMi h2{
-    color: white;
-    text-align: center;
-    font-weight: 900;
-}
-
-
-.contenedorSobreMi p{
-    color: white;
-    text-align: justify;
-}
 
 
 /*******************************************
@@ -185,36 +190,80 @@ header{
 * COMIENZA ESTILOS DEL PEDIDOS:
 *******************************************/
 
+.contenedorPedidos {
 
+    form{
+        width: 80%;
+        margin: 3% auto;
+        padding: 1%;
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        border: dotted 3px $colorRojo;
+        border-radius: 1rem;
 
-.contenedorPedidos form{
-    width: 80%;
-    margin: 3% auto;
-    padding: 1%;
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    border: dotted 3px firebrick;
-    border-radius: 1rem;
+        .contenedorInfo{ 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            label{ 
+                font-weight: 700;
+                
+            }
+
+            input{ 
+                margin-bottom: 20%;
+                
+            }
+            
+        }
+
+        .contenedoBoton{
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+        
+            input{
+                margin-top: 5%;
+                padding: 0.5% 2% 0.5% 2%;
+                background-color: $colorRojo;
+                border: none;
+                color: $colorBlanco;
+                border-radius: 5rem;
+                font-size: 1.2rem;
+                font-weight:900;
+                -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+                -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+                box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+                cursor: pointer;
+            }
+        }
+    
+    }
+
+    h2{
+        width: 100%;
+        text-align: center;
+        font-size: 2rem;
+        font-family: 'Yeseva One', cursive;
+        color: $colorRojo;
+    }
+
+    p{
+        width: 100%;
+        text-align: center;
+        font-size: 1.2rem;
+    }
 
 }
 
-.contenedorPedidos h2{
-    width: 100%;
-    text-align: center;
-    font-size: 2rem;
-    font-family: 'Yeseva One', cursive;
-    color: firebrick;
-}
-
-.contenedorPedidos p{
-    width: 100%;
-    text-align: center;
-    font-size: 1.2rem;
-}
 
 #fechaGrid{
+    text-align: center;
+    background-color: $colorRojo;
+    border-radius: 1rem;
     display: grid;
     align-content: center;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -222,84 +271,38 @@ header{
     column-gap: 1%;
     row-gap: 1%;
     padding: 4% 1% 4% 1%;
-}
 
-#fechaGrid h3{
-    align-self: center;
-    grid-column-start: 1;
-    grid-column-end: 8;
-}
+    h3{
+        font-size: 2rem;
+        font-weight: 900;
+        color: $colorBlanco;
+        align-self: center;
+        grid-column-start: 1;
+        grid-column-end: 8;
+    }
 
-#fechaGrid h4{
-   align-self: center;
-   color: white;
-}
+    h4{
+        align-self: center;
+        color: $colorBlanco;
+     }
 
+     span{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 4rem;
+        background-color: $colorBlancoHumo;
+        border-radius: 0.5rem;
+        cursor: pointer;
+    }
 
-.contenedorTable{
-    text-align: center;
-    background-color: firebrick;
-    border-radius: 1rem;
-}
-
-#fechaGrid h3{
-    font-size: 2rem;
-    font-weight: 900;
-    color: white;
-}
-
-#fechaGrid span{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 4rem;
-    background-color: whitesmoke;
-    border-radius: 0.5rem;
-    cursor: pointer;
-}
-
-#fechaGrid span:hover{
-    background-color: orange;
-
-}
-
-.contenedorInfo{ 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    span:hover{
+        background-color: $colorNaranja;
     
+    }
+     
 }
 
-.contenedorInfo label{ 
-    font-weight: 700;
-    
-}
-
-.contenedorInfo input{ 
-    margin-bottom: 20%;
-    
-}
-
-.contenedoBoton{
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.contenedoBoton input{
-    margin-top: 5%;
-    padding: 0.5% 2% 0.5% 2%;
-    background-color: firebrick;
-    border: none;
-    color: white;
-    border-radius: 5rem;
-    font-size: 1.2rem;
-    font-weight:900;
-    -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
-    cursor: pointer;
-}
 
 .contenedorPrecios{
     width: 60%;
@@ -310,46 +313,44 @@ header{
     grid-template-rows: 1fr ;
     row-gap: 2%;
     padding: 1%;
+
+    h3{
+        justify-self: center;
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+
+    div{
+        display: flex;
+        flex-direction: column;
+        
+        h4{
+            font-size: 1rem;
+            background-color: $colorRojo;
+            align-self: stretch;
+            text-align: center;
+            padding: 1%;
+        }
+
+        span{
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 2% 0% 2% 5%;
+            margin-top: 5%;
+            text-align: center;
+        }
+
+        .rowGrey{
+            background-color: $colorGris;
+        }
+        
+        .rowOrange{
+            background-color: $colorRojo;
+        }
+        
+        
+    }
 }
-
-
-
-.contenedorPrecios h3{
-    justify-self: center;
-    grid-column-start: 1;
-    grid-column-end: 5;
-}
-
-.contenedorPrecios div{
-    display: flex;
-    flex-direction: column;
-    
-}
-
-.contenedorPrecios div h4{
-    font-size: 1rem;
-    background-color: firebrick;
-    align-self: stretch;
-    text-align: center;
-    padding: 1%;
-}
-
-.contenedorPrecios div span{
-    font-size: 0.75rem;
-    font-weight: 700;
-    padding: 2% 0% 2% 5%;
-    margin-top: 5%;
-    text-align: center;
-}
-
-.rowGrey{
-    background-color: #d3d3d3;
-}
-
-.rowOrange{
-    background-color: firebrick;
-}
-
 
 /*******************************************
 * FIN ESTILOS DEL PEDIDOS.
@@ -364,38 +365,41 @@ header{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+
+    h2{
+        width: 100%;
+        text-align: center;
+        font-size: 2rem;
+        font-family: 'Yeseva One', cursive;
+        color: firebrick;
+        
+    }
+
+    h3{
+        width: 97%;
+        margin-top: 3%;
+        text-align: center;
+        font-size: 1.2rem;
+        font-family: 'Yeseva One', cursive;
+        color: firebrick;
+        background-color: white;
+        border-radius: 5rem;
+        -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+        box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+       
+    }
+
+    p{
+        padding: 2% 25% 2% 25%;
+    }
     
-}
-
-.contenedorPatrones h2{
-    width: 100%;
-    text-align: center;
-    font-size: 2rem;
-    font-family: 'Yeseva One', cursive;
-    color: firebrick;
-    
-}
-
-.contenedorPatrones h3{
-    width: 97%;
-    margin-top: 3%;
-    text-align: center;
-    font-size: 1.2rem;
-    font-family: 'Yeseva One', cursive;
-    color: firebrick;
-    background-color: white;
-    border-radius: 5rem;
-    -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
-   
-}
-
-.contenedorPatrones p{
-    padding: 2% 25% 2% 25%;
 }
 
 .hijoContenedorPatrones{
+    background-color:  firebrick;
+    padding: 1% 0% 1% 0%;
+    border-radius: 1rem;
     display: flex;
     width: 25%;
     flex-direction: column;
@@ -404,73 +408,69 @@ header{
     -webkit-box-shadow: 10px 10px 28px -13px rgba(0,0,0,0.9);
     -moz-box-shadow: 10px 10px 28px -13px rgba(0,0,0,0.9);
     box-shadow: 10px 10px 28px -13px rgba(0,0,0,0.9);
+
+    img{
+        width: 90%;
+        border:solid 5px white;
+        border-radius: 50%;
+    }
+
+    p{
+        font-size: 1.3rem;
+        color: white;
+        font-weight:400;
+        font-style: italic;
+        padding: 1% 0% 2% 0%;
+    }
+
+    .precioPatrones{
+        display: flex;
+        width:30%;
+        flex-direction: column;
+        text-align: center;
+        padding: 1%;
+        border-top: solid 2px white;
+        border-bottom: solid 2px white;
+
+        span{
+
+            font-weight: 900;
+            color: white;
+            padding: 1%;
+        }
+    }
+
+    button{
+        margin-top: 5%;
+        padding: 2%;
+        background-color: white;
+        border: none;
+        color: firebrick;
+        border-radius: 5rem;
+        font-size: 1.2rem;
+        font-weight:900;
+        -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+        box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+    
+    }
+
+    button:hover{
+        cursor: pointer;
+        animation: forwards;
+        animation-name: botonAnimación;
+        animation-duration: 3s;
+    }
+    
+    @keyframes botonAnimación{
+        0%{ transform: rotate(0deg); width:30%;}
+        25%{ transform: rotate(8deg); width:35%}
+        75%{ transform: rotate(-8deg); width:35%;}
+        100%{ transform: rotate(0deg); width:30%;}
+    }
+    
 }
 
-.hijoContenedorPatrones{
-    background-color:  firebrick;
-    padding: 1% 0% 1% 0%;
-    border-radius: 1rem;
-}
-
-.hijoContenedorPatrones img{
-    width: 90%;
-    border:solid 5px white;
-    border-radius: 50%;
-}
-
-.hijoContenedorPatrones p{
-    font-size: 1.3rem;
-    color: white;
-    font-weight:400;
-    font-style: italic;
-    padding: 1% 0% 2% 0%;
-}
-
-.precioPatrones{
-    display: flex;
-    width:30%;
-    flex-direction: column;
-    text-align: center;
-    padding: 1%;
-    border-top: solid 2px white;
-    border-bottom: solid 2px white;
-}
-
-.precioPatrones span{
-
-    font-weight: 900;
-    color: white;
-    padding: 1%;
-}
-
-.hijoContenedorPatrones button{
-    margin-top: 5%;
-    padding: 2%;
-    background-color: white;
-    border: none;
-    color: firebrick;
-    border-radius: 5rem;
-    font-size: 1.2rem;
-    font-weight:900;
-    -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
-
-}
-
-.hijoContenedorPatrones button:hover{
-    cursor: pointer;
-    animation: forwards;
-    animation-name: botonAnimación;
-    animation-duration: 3s;
-}
-
-@keyframes botonAnimación{
-    0%{ transform: rotate(0deg); width:30%;}
-    25%{ transform: rotate(8deg); width:35%}
-    75%{ transform: rotate(-8deg); width:35%;}
-    100%{ transform: rotate(0deg); width:30%;}
-}
 
 /*******************************************
 * FIN ESTILOS DE PATRONES:
@@ -485,76 +485,79 @@ header{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
 
-.contenedorFormulario h2{
-    width: 100%;
-    text-align: center;
-    font-size: 2rem;
-    font-family: 'Yeseva One', cursive;
-    color: firebrick;
-}
+    h2{
+        width: 100%;
+        text-align: center;
+        font-size: 2rem;
+        font-family: 'Yeseva One', cursive;
+        color: firebrick;
+    }
 
-.contenedorFormulario form{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 40%;
-    padding: 1%;
-    margin: 4%;
-    background-color: firebrick;
-    position: relative;
-    font-weight: 700;
-    color: white;
-    border-radius: 1rem;
-}
+    form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 40%;
+        padding: 1%;
+        margin: 4%;
+        background-color: firebrick;
+        position: relative;
+        font-weight: 700;
+        color: white;
+        border-radius: 1rem;
 
-.contenedorFormulario form div{
-    width: 70%;
-}
+        div{
+            width: 70%;
+        }
 
-.contenedorFormulario label{
-    position: absolute;
-}
+        label{
+            position: absolute;
+        }
 
-.contenedorFormulario input[type=text],.contenedorFormulario input[type=email],.contenedorFormulario select{
-    width: 100%;
-    color: white;
-    font-size: 1.2rem;
-    border: none;
-    margin: 5% 0% 5% 0%;
-    border-bottom: solid 2px white;
-    background: transparent;
-}
+        input[type=text],.contenedorFormulario input[type=email],.contenedorFormulario select{
+            width: 100%;
+            color: white;
+            font-size: 1.2rem;
+            border: none;
+            margin: 5% 0% 5% 0%;
+            border-bottom: solid 2px white;
+            background: transparent;
+        }
+    
+        textarea{
+            width: 100%;
+            margin: 3% 0% 3% 0%;
+            font-size: 1rem;
+        }
 
-.contenedorFormulario textarea{
-    width: 100%;
-    margin: 3% 0% 3% 0%;
-    font-size: 1rem;
-}
+        .botonForm{
+            margin: 3% 0% 3% 0%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
 
-.botonForm{
-    margin: 3% 0% 3% 0%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
+            input{
+                width: 40%;
+                padding: 1% 3% 1% 3%;
+                background-color: white;
+                border: none;
+                color: firebrick;
+                border-radius: 5rem;
+                font-size: 1.2rem;
+                font-weight:900;
+                -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+                -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+                box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+                cursor: pointer;
+            }
+        }
+    }
 
-.botonForm input{
-    width: 40%;
-    padding: 1% 3% 1% 3%;
-    background-color: white;
-    border: none;
-    color: firebrick;
-    border-radius: 5rem;
-    font-size: 1.2rem;
-    font-weight:900;
-    -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
-    cursor: pointer;
+
+    
 }
 
 /*******************************************
@@ -569,79 +572,96 @@ footer{
     background-color: #d3d3d3;
     padding: 1% 0% 0.5% 0%;
     
+    .contenedorRedesFooter{
+
+        img{
+            width: 10%;
+            cursor: pointer;
+        }
+    }
+    
+    .copyRight{
+        text-align: center;
+      
+    }
 }
 
-.contenedorRedesFooter img{
-    width: 10%;
-    cursor: pointer;
-}
 
-.copyRight{
-    text-align: center;
-  
-}
 
 /*******************************************
 * FIN ESTILOS DE FOOTER
 *******************************************/
 
+/*******************************************
+* COMIENZA RESPONSIVE A 580px:
+*******************************************/
+
 
 @media (max-width: 580px){
-    .logo{
-        width: 100%;
-    }
 
-    .menu ul li a{
-        text-align: center;
-    }
-
+    header{
+        background-color: $colorGris;
+        .logo{
+            width: 100%;
+        }
+        
+        .active{
+            color: $colorRojo !important;
+            font-weight: 700;
+        }
     
-    .contenedorRedesHeader{
-        text-align: center;
+        .menu{
+            ul{
+                li{
+                    a{
+                        text-align: center;
+                    }
+                }
+            }
+        } 
+    
+        .contenedorRedesHeader {
+            text-align: center;
+           
+            h3{
+                font-size: 1.5rem;
+                margin-top: 8%;
+            }
+            img{
+                width: 15%;
+                margin: 0% 3% 0% 3%;
+                cursor: pointer;
+            }
+        }
     }
     
-    .contenedorRedesHeader h3{
-        font-size: 1.5rem;
-        margin-top: 8%;
-    }
-    
-    .contenedorRedesHeader img{
-        width: 15%;
-        margin: 0% 3% 0% 3%;
-        cursor: pointer;
-    }
-
-    /*******************************************
+/*******************************************
 * COMIENZA ESTILOS DEL INDEX.
 *******************************************/
+
 
 .fondoSection{
     background-size: 194vh;
     height: 100vh;
-    background-color: firebrick;
+    background-color: $colorRojo;
     background-position-x: 19%;
+
+    h1{
+        transform: translateY(10rem);
+        animation:forwards;
+        animation-name: entraTexto;
+        animation-duration: 4s;
+        animation-timing-function: ease-in-out;
+    }
+    
+    
+    @keyframes entraTexto {
+        0% {transform: translateY(-15rem);}
+        100% {transform: translateY(10rem); color:$colorBlanco;}
+      }
+    
+
 }
-
-.fondoSection h1{
-    font-family: 'Yeseva One', cursive;
-    font-size: 3rem;
-    color: transparent;
-    transform: translateY(10rem);
-    animation:forwards;
-    animation-name: entraTexto;
-    animation-duration: 4s;
-    animation-timing-function: ease-in-out;
-}
-
-
-@keyframes entraTexto {
-    0% {transform: translateY(-15rem);}
-    100% {transform: translateY(10rem); color:white;}
-  }
-
-
-
-
 
 /*******************************************
 * FIN ESTILOS DEL INDEX.
@@ -653,26 +673,26 @@ footer{
 
 footer{
     text-align: center;
+
+    address{
+        font-size: 2rem;
+    }
     
-}
+    .contenedorRedesFooter{
 
-footer address{
-    font-size: 2rem;
-}
-
-.contenedorRedesFooter img{
-    display: block;
-    margin: auto;
-    width: 20%;
-    cursor: pointer;
-    padding-bottom: 2%;
-}
-
-.copyRight{
-    text-align: center;
-    font-size: 1.5rem;
-    font-style: italic;
-    margin: 1% 0% 8% 0%;
+        img{
+            display: block;
+            margin: auto;
+            width: 20%;
+            padding-bottom: 2%;
+        }
+    }
+    
+    .copyRight{
+        font-size: 1.5rem;
+        font-style: italic;
+        margin: 1% 0% 8% 0%;
+    }
 }
 
 /*******************************************
@@ -680,3 +700,7 @@ footer address{
 *******************************************/
 
 }
+
+/*******************************************
+* FIN RESPONSIVE A 580px:
+*******************************************/
